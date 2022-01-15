@@ -1,203 +1,171 @@
- /* fonts */
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
- /* common styles or utilitize */
- body{
-     font-family: 'Poppins', sans-serif;
-     background-color: rgba(170, 170, 170, 1);
- }
- main{
-     display:flex;
-     flex-direction:column;
-     align-items:center;    
- }
-.container1{
-    background-color: white;
-    width: 918px;
-    border-radius: 5px;
+*{
+    padding: 0;
+    margin:0;
 }
-.container1 h1{
-    margin-left: 20px;
+body{
+    background-color: gray;
 }
-
- .container{
- background-color: #FFFFFF;
- max-width: 859px;
- padding: 30px;
-
- 
- }
- hr{
-     border: 1px solid #D1D1D1;
-     margin-bottom: 27px;
- }
-
-/* influencer part start */
-.image-width{
-    width: 100%;
-    border: 2px solid red;
-    border-radius: 50%;
+main{
+    max-width: 900px;
+    padding:20px 20px 0 20px;
+    background-color: rgb(245, 240, 240);
+    margin: 0 auto;
 }
-.font-big{
-    font-size: 40px;
+ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
 }
-.influencer p{
-    text-align: justify;
-}
- .influencer-info{
-    margin-bottom: 30px;
-}
-
-.preebook-button{
-    padding: 10px;
-    width: 40%;
-    font-weight: bold;
-    border-radius: 20px;
-    color: white;
-    background-color: #E02C6D;
-}
-.fas{
-    color: white;
-}
-.section-title{
-    color: #562EFF;
-    font-size:24px;
-    text-align: center;
-    margin-bottom: 30px;   
-}
-.influencer{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-row-gap: 30px;
-}
-
-/* influencer part end */
-
-
-/* popular collection section */
-
- .popular-collection{
-     display: grid;
-     grid-template-columns: repeat(3,1fr);
-     grid-column-gap: 24px;
-     grid-row-gap: 24px;   
- }
- span{
-     margin-left: 5px;
- }
- .collection-banner{
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
-
- .collection .collection-banner img{
-     width: 270px;
-     height: 256px;
- }
- .collection-info{
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
- }
-
-.see-more{
-    text-align:right;
-    color: tomato;
-}
-.see-more a{
-    color: tomato;
+ul a{
+    padding: 20px;
     text-decoration: none;
 }
-.left-see{
-    color: tomato;
-    margin-left: 3px;
+.section1-header-info{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
 }
-  .fa-star{
-      font-size: 12px;
-  }
+.section1-header-info> h1{
+    font-size: 30px;
+}
+/* .........section2 start............. */
 
- .fa-star.filled{
-     color: #ffc014;
- }
- .empty{
-     color:#aeaeae;
- }
+.section2-influencer-info{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+}
 
-/* tony robbin part */
+.section2-influencer-info h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
 
-
- .width-images2{
-    margin-top: 30px;
-    width: 70%;
- }
-
- .preebook-button1{
-    padding: 10px;
-    width: 30%;
-    font-weight: bold;
+.preebook-button {
+    background-color: rgb(219, 42, 42);
+    border: none;
     border-radius: 20px;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.9s;
+  }
+  
+  .preebook-button:hover {
+    background-color: #3e8e41;
     color: white;
-    background-color: #E02C6D;
- }
-
-
- /* footer-container */
-
- .footer-container{
-   background-color: navy;
-   opacity: .8;
-   color: white;
-   width: 870px;
-   height: 200px;
-   padding: 25px;
-   border-radius: 5px;
-   text-align: center;
- }
- .fab{
-     padding: 10px;
-     color: white;
- }
-
-
- /* ..................... 
-      media queries
- ....................... */
-
-  /* mobile device */
-  @media only screen and (max-width:688px){
-            .container1{
-                width: 100%;
-               text-align: center;
-            }
   }
-/*       
-      .container{
-          width: 100px;
-      }
 
-     
-      .players, .blogs, .courses{
-           
-          
-          grid-template-columns:repeat(1,1fr)      
-      }
-     
-      .player, .blog{
-          flex-direction: column;
-      } 
-  } */
+/* .......section3 start............... */
 
-  /* tablet devices */
-  @media only screen and (min-width:688px) and (max-width:992px){
-     
+.section3>h1{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-size: 40px;
     
-     /* .container{
-      width: 100%; 
-     }
-    .blogs{
-         grid-template-columns: repeat(1,1fr);
-     }
+}
+.collection-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 5px;
+    
+    grid-row-gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.collection-info img{
+    width: 80%;
+    box-shadow: 9px 9px 10px gray;
+}
+.shadaw{
+   
+}
+.fas{
+    color: goldenrod;
+}
+/* ......section4 start............ */
+
+.section4{
+    margin-top: 50px;
+}
+.tony-robbin{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.tony-robbin h1{
+    font-size: 30px;
+}
+.tony-robbin img{
+    margin-top: 30px;
+    width: 60%;
+}
+.tony-robbin p{
+    margin-top: 20px;
+}
+.tonny-info{
+    margin-top: 25px;
+}
+
+
+
+.preebook-button1 {
+    background-color: rgb(219, 42, 42);
+    border: none;
+    border-radius: 20px;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.9s;
+  }
+  
+  .preebook-button1:hover {
+    background-color: #3e8e41;
+    color: white;
   }
 
-  @media screen {
-      
-  } */
+/* footer-container */
+
+.footer-container{
+    margin-top: 20px;
+    background-color: navy;
+   
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.fab{
+    color: white;
+    margin-top: 5px;
+    padding: 10px;
+}
+.footer-info{
+    line-height: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .section2,.section1 {
+        display: block;
+     grid-template-columns: repeat(1,1fr);
+     width: auto;
+     height: auto;
+    
+     text-align: center;
+     
+    }
+    .main{
+        padding:0px;
+    }
+    .section2 p{
+        max-width:80%;
+        text-align: center;
+        margin: 0 auto;
+        text-align: justify;
+    }
+  }
