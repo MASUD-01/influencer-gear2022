@@ -81,9 +81,6 @@ ul a{
     width: 80%;
     box-shadow: 9px 9px 10px gray;
 }
-.shadaw{
-   
-}
 .fas{
     color: goldenrod;
 }
@@ -153,23 +150,27 @@ ul a{
 
 
     ul{
-        display: flex;
+        
         list-style-type: none;
-        font-size: 20px;
+        font-size: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     ul a{
-        padding: 20px;
+        padding: 5px;
         text-decoration: none;
     }
     .section1-header-info{
         display:grid;
         grid-template-columns: repeat(1,1fr);
+        justify-content: center;
         align-items: center;
     }
     .section1-header-info> h1{
         width: 100%;
         display:block;
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
     }
     .section2-influencer-info{
@@ -205,5 +206,5 @@ ul a{
         width: 80%;
         box-shadow: 9px 9px 10px gray;
     }
-    
+  
 }
