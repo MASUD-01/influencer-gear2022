@@ -150,22 +150,60 @@ ul a{
 
 
 @media only screen and (max-width: 600px) {
-    .section2,.section1 {
-        display: block;
-     grid-template-columns: repeat(1,1fr);
-     width: auto;
-     height: auto;
-    
-     text-align: center;
-     
+
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        font-size: 20px;
     }
-    .main{
-        padding:0px;
+    ul a{
+        padding: 20px;
+        text-decoration: none;
     }
-    .section2 p{
-        max-width:80%;
+    .section1-header-info{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+    .section1-header-info> h1{
+        width: 100%;
+        display:block;
+        font-size: 30px;
         text-align: center;
-        margin: 0 auto;
-        text-align: justify;
     }
-  }
+    .section2-influencer-info{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .section2-influencer-info h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+
+    .section3>h1{
+        text-align: center;
+        margin: 20px 0 20px 0;
+        font-size: 40px;
+        
+    }
+    .collection-info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 5px;
+        
+        grid-row-gap: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .collection-info img{
+        width: 80%;
+        box-shadow: 9px 9px 10px gray;
+    }
+    
+}
